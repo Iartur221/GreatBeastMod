@@ -18,6 +18,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.stream.Collectors;
 
+import com.iartur221.greatbeast.entity.ModEntityTypes;
 import com.iartur221.greatbeast.item.ModItems;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -30,11 +31,11 @@ public class GreatBeastMod
     private static final Logger LOGGER = LogManager.getLogger();
 
     public GreatBeastMod() {
-
+        //register the things you add to game
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
-
+        ModEntityTypes.register(eventBus);
         
         // Register the setup method for modloading
         eventBus.addListener(this::setup);
@@ -52,6 +53,7 @@ public class GreatBeastMod
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)

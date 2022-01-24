@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "C#C",
+        "CSC",
+        "CCC"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:cake"
+        },
+        "S": {
+            "item": "minecraft:diamond"
+        },
+        "C": {
+            "item": "minecraft:gold_ingot"
+        }
+    },
+    "result": {
+        "item": "greatbeastmod:kremowka"
+    }
+}
