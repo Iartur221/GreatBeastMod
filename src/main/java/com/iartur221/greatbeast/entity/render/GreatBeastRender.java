@@ -13,7 +13,7 @@ public class GreatBeastRender extends MobRenderer<GreatBeastEntity, GreatBeastMo
         new ResourceLocation(GreatBeastMod.MOD_ID, "textures/entity/greatbeast.png");
 
     public GreatBeastRender(EntityRendererProvider.Context renderManagerIn) {
-        super(renderManagerIn, new GreatBeastModel(renderManagerIn.bakeLayer(GreatBeastModel.LAYER_LOCATION)), 4f);
+        super(renderManagerIn, new GreatBeastModel<GreatBeastEntity>(renderManagerIn.bakeLayer(GreatBeastModel.LAYER_LOCATION)), 4f);
     }
 
     @Override

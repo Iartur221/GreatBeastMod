@@ -75,5 +75,4 @@ public class GreatBeastEntity extends Zombie{
         return super.hurt(p_34288_, p_34289_);
     }
     
-
 }
