@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "greatbeastmod:block/demon_sand"
+    }
+}

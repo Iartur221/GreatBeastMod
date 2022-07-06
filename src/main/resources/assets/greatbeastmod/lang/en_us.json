@@ -1,4 +1,12 @@
 {
     "item.greatbeastmod.kremowka": "Krwawa Kremowka",
-    "entity.greatbeastmod.greatbeast": "Bestia"
+    "item.greatbeastmod.niszczyciel": "Niszczyciel",
+
+    "entity.greatbeastmod.greatbeast": "Bestia",
+
+    "block.greatbeastmod.ukinum_ore": "Ruda Ukiny",
+    "block.greatbeastmod.demon_grass": "Trawa demona",
+    "block.greatbeastmod.demon_sand": "Piach demona",
+    "block.greatbeastmod.cursed_block": "Blok klatwy"
+
 }

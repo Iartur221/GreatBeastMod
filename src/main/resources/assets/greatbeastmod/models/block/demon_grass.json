@@ -1,0 +1,11 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "up": "greatbeastmod:block/demon_grass_up",
+        "east": "greatbeastmod:block/demon_grass_side",
+        "west": "greatbeastmod:block/demon_grass_side",
+        "north": "greatbeastmod:block/demon_grass_side",
+        "south": "greatbeastmod:block/demon_grass_side",
+        "down": "greatbeastmod:block/demon_grass_down"
+    }
+}

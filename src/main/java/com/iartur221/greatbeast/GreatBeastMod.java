@@ -18,6 +18,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.stream.Collectors;
 
+import com.iartur221.greatbeast.block.ModBlocks;
 import com.iartur221.greatbeast.entity.ModEntityTypes;
 import com.iartur221.greatbeast.item.ModItems;
 
@@ -31,12 +32,16 @@ public class GreatBeastMod
     private static final Logger LOGGER = LogManager.getLogger();
 
     public GreatBeastMod() {
-        //register the things you add to game
+        //register(actually load here) the things you add to game <<<< PUT REGISTRIES BELOW THIS LINE >>>>
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
+        
         ModItems.register(eventBus);
         ModEntityTypes.register(eventBus);
-        
+        ModBlocks.register(eventBus);
+
+
+        //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
         // Register the setup method for modloading
         eventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading
